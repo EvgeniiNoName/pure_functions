@@ -5,6 +5,7 @@ branches:
         - master  # ветка git
 cache: node_modules  # кеширование
 install:
+    - ps: Install-Product node $env:nodejs_version
     - npm install  # команда установки зависимостей
 build: off
 test_script:
